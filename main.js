@@ -29,6 +29,8 @@ scrollToTopBtn.addEventListener('click', function() {
 window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 });
+
+// Slider
 $(document).ready(function(){
     $('.slider').slick({
       prevArrow: '<div class="slick-prev"></div>',
