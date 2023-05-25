@@ -14,10 +14,6 @@
     }
 
 
-    
-
-  
-  
 
    /*-----------------------------NAVBAR------------------------------------------- */
     .nav-link.active {
@@ -49,7 +45,7 @@
     }
     
     .navbar-nav .nav-item .nav-link {
-        color: #5c94e7;
+        color: #00aeef;
     }
 
 
@@ -135,7 +131,7 @@
 
 /*-----------------------------ABOUT US------------------------------------------- */
     .about-us-bg{
-        background-color: #4a4949;
+        background-color: #531946;
     }
     .about-us-p{
         color: #fff;
