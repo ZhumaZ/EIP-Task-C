@@ -14,32 +14,10 @@
     }
 
 
-    /*-----------------------------HEADER (BACKGROUND IMAGE AND MAIN HEADING)------------------------------------------- */
-  .header-bg-container {
-    position: relative;
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-  }
+    
 
-  /* Center the image */
-  .header-bg-container img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
-  .centered-heading {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-  }
-
+  
+  
 
    /*-----------------------------NAVBAR------------------------------------------- */
     .nav-link.active {
@@ -71,7 +49,7 @@
     }
     
     .navbar-nav .nav-item .nav-link {
-        color: #4a4949;
+        color: #5c94e7;
     }
 
 
@@ -98,6 +76,20 @@
         font-weight: bold;
         color: #fff;
     }
+
+
+    /* Adjust Navbar item (bring it towards right to left)*/
+     .navbar {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+
+  .navbar-nav.ml-auto.nav-text {
+    margin-right: 50px;
+}
+
     
 
     /*-----------------------------OUR SERVICE DROPDOWN MENU------------------------------------------- */
@@ -106,7 +98,7 @@
       }
       
       .navbar .dropdown-menu {                             /* Adjust dropdown menu */
-        background-color: #00aeef;
+        background-color: #5c94e7;
         margin-top: 0;
         min-width: auto;
         
@@ -208,7 +200,85 @@
   }
   
   
+  /*-----------------------------HEADER (BACKGROUND IMAGE SLIDER)------------------------------------------- */
   
+
+.slider {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slide {
+  text-align: center;
+}
+
+.header-bg-container {
+  position: relative;
+  height: 100vh;
+}
+
+.header-bg-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.centered-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 24px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  z-index: 1;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  content: "";
+}
+
+.slick-prev:before {
+  left: 20px;
+  content: "<";
+}
+
+.slick-next:before {
+  right: 20px;
+  content: ">";
+}
+
+
+/* Mobile Responsive Styles*/
+@media (max-width: 768px) {
+  .header-bg-container {
+      height: 60vh; /* Increase the height of the slide in mobile view */
+  }
+
+  .header-bg-container img {
+      height: 100%;
+      max-height: none; /* Remove the maximum height restriction */
+  }
+
+  .centered-heading {
+      font-size: 18px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+      font-size: 24px; /* Decrease the size of arrow sign */
+      padding: 5px; /* Adjust the padding around arrow sign */
+  }
+}
 
   
   
@@ -228,14 +298,4 @@
         color: #00aeef;
     }
 
-  
 
-   
-
-  
-
-
-    
-    
-
-    
