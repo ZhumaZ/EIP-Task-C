@@ -1,0 +1,241 @@
+
+
+    /* Font setup */ 
+    body {
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    /* color setup */ 
+    primary-color{
+        background-color:#00aeef;
+    }
+    secondary-color{
+        background-color:  #4a4949; 
+    }
+
+
+    /*-----------------------------HEADER (BACKGROUND IMAGE AND MAIN HEADING)------------------------------------------- */
+  .header-bg-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+  }
+
+  /* Center the image */
+  .header-bg-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .centered-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+
+   /*-----------------------------NAVBAR------------------------------------------- */
+    .nav-link.active {
+        text-decoration: underline;    /*Add underline to the active nav-link */
+    }
+
+  
+   .nav-link {
+        position: relative;                /* Add space between nav-link and underline */
+        padding-bottom: 4px;
+    }
+
+ 
+    .nav-link:after {                     /* Style the underline */
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+    }
+
+  
+    .nav-link:hover:after {
+        transform: scaleX(1);             /* Animate the underline on hover */
+    }
+    
+    .navbar-nav .nav-item .nav-link {
+        color: #4a4949;
+    }
+
+
+    .centered-heading{                   /* FONT STYLE FOR MAIN, SECONDARY AND PARAGRAPH */
+        font-size: 22px;
+    }
+
+    .secondary-header{
+        color: #00aeef;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    
+
+    .paragraph{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .nav-font{
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+    }
+    
+
+    /*-----------------------------OUR SERVICE DROPDOWN MENU------------------------------------------- */
+    .navbar-nav .nav-item .nav-link.our-services:after {          /* Remove underline from "Our Services" nav item */
+        display: none;
+      }
+      
+      .navbar .dropdown-menu {                             /* Adjust dropdown menu */
+        background-color: #00aeef;
+        margin-top: 0;
+        min-width: auto;
+        
+      }
+      
+      
+      .navbar .dropdown:hover .dropdown-menu {          /* Show dropdown menu on hover */
+        display: block;
+      }
+      
+      
+      .navbar .dropdown-item:hover {                    /* Add hover color to dropdown items */
+        background-color: #ffffff;
+      }
+  
+      /* Add underline to the underlined-heading class */
+    .underlined-heading {
+      position: relative;
+      display: inline-block;
+      padding-bottom: 5px; /* Add space between the underline and text */
+    }
+  
+    /* Style the underline */
+    .underlined-heading::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #00aeef;
+    }
+
+
+/*-----------------------------ABOUT US------------------------------------------- */
+    .about-us-bg{
+        background-color: #4a4949;
+    }
+    .about-us-p{
+        color: #fff;
+    }
+ /*-----------------------------MOBILE RESONSIVE------------------------------------------- */
+
+  @media (max-width: 767px) {              /* Remove underline for mobile screens */
+    .nav-link:after {
+      display: none;
+      
+    }
+    .header-bg-container {          /* Responsive height for mobile devices */
+        height: 200px;
+      }
+  
+      .centered-heading{                  /* MAIN HEADING FONT */
+          font-size: 20px;
+      }
+  
+      .secondary-header{                 /* SECONDARY HEADING FONT  */
+          font-size: 17px;
+          font-weight: bold;
+          text-align: center;
+      }
+  
+      .paragraph{                        /* PARAGRAPH FONT  */
+          text-align: center;
+          font-size: 13px;
+      }
+
+      .about-us-p{
+        font-size: 13px;
+     }
+
+     .our-service-p{
+       font-size: 13px;
+    }
+      .footer p{
+        font-size: 10px;
+      }
+
+      
+  }
+
+  .scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00aeef;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .scroll-to-top-btn:focus {
+    outline: none;
+  }
+  
+  
+  
+
+  
+  
+ /*-----------------------------FOOTER------------------------------------------- */
+  .footer {
+    background-color:  #4a4949;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer p {
+    margin: 0;
+  }
+  .footer span{
+        color: #00aeef;
+    }
+
+  
+
+   
+
+  
+
+
+    
+    
+
+    

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>EIP Frontend Practical Task B</title>
+</head>
+
+<body>
+
+    <!-------------------------------------- NAVBAR ------------------------------------------------>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00aeef;">
+        <a class="navbar-brand" href="#">
+            <img class="logo-container" src="image/logo1.png" width="120px" height="90px" alt="Logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav ml-auto nav-text">
+                <li class="nav-item active">
+                    <a class="nav-link nav-font" href="#" onclick="location.reload();">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-font" href="#about-section">About</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link our-services dropdown-toggle nav-font" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Our Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item nav-font" href="#web-section">Web Design</a>
+                    <a class="dropdown-item nav-font" href="#web-section">Web Development</a>
+                    <a class="dropdown-item nav-font" href="#web-section">Mobile App Design</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-font" href="blog.html" target="_blank">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-font" href="contact.html" target="_blank">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!---------------------------- BACKGROUND IMAGE AND MAIN HEADING ----------------------------------->
+    <div class="header-bg-container">
+        <img src="image/try.jpg" alt="Full Width Image">
+        <h1 class="centered-heading">Hello, World!</h1>
+    </div>
+    
+    <!-------------------------------------- ABOUT US ------------------------------------------------>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card h-100">
+                     <img src="image/try.jpg" class="card-img-top" alt="Card Image">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card h-100">
+                    <div class="card-body about-us-bg" id="about-section">
+                        <h1 class="secondary-header">ABOUT US</h1>
+                        <p class="Paragraph about-us-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis tortor id varius
+                        feugiat. Nam iaculis risus sed est volutpat, non hendrerit velit tristique. Fusce auctor velit eget metus
+                        eleifend rhoncus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis tortor id varius
+                        feugiat. Nam iaculis risus sed est volutpat, non hendrerit velit tristique. Fusce auctor velit eget metus
+                        eleifend rhoncus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-------------------------------------- OUR SERVICE ------------------------------------------------>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="secondary-header">OUR SERVICE</h1>
+                <p class="Paragraph our-service-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis tortor id varius feugiat. Nam iaculis
+                risus sed est volutpat, non hendrerit velit tristique. Fusce auctor velit eget metus eleifend rhoncus.</p>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------- WEB DESIGN, DEVELOPMENT AND MOBILE APP DESIGN ---------------------------------->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4 text-center" id="web-section">
+                <h1 class=" secondary-header underlined-heading">Web Design</h1>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis tortor id varius feugiat. Nam iaculis
+                risus sed est volutpat, non hendrerit velit tristique. Fusce auctor velit eget metus eleifend rhoncus.</p>
+            </div>
+            <div class="col-lg-4 text-center" id="web-section">
+                <h1 class="secondary-header underlined-heading">Web Development</h1>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis tortor id varius feugiat. Nam iaculis
+                risus sed est volutpat, non hendrerit velit tristique. Fusce auctor velit eget metus eleifend rhoncus.</p>
+            </div>
+            <div class="col-lg-4 text-center" id="web-section">
+                <h1 class="secondary-header underlined-heading">Mobile App Design</h1>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis tortor id varius feugiat. Nam iaculis
+                risus sed est volutpat, non hendrerit velit tristique. Fusce auctor velit eget metus eleifend rhoncus.</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <button id="scrollToTopBtn" class="scroll-to-top-btn">&#9650;</button>
+
+
+
+    <!-------------------------------------- FOOTER ------------------------------------------------>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center ">
+                    <p class="text-light ">&copy; Copy right 2023 <span>Eunoia I.T Solutions</span> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+    // Smooth scroll to section
+    $('a[href^="#"]').on('click', function(event) {
+        var target = $($(this).attr('href'));
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 800);
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+// Show or hide the button based on the scroll position
+window.addEventListener('scroll', function() {
+if (window.pageYOffset > 300) {
+  scrollToTopBtn.style.display = 'block';
+} else {
+  scrollToTopBtn.style.display = 'none';
+}
+});
+
+// Scroll to the top when the button is clicked
+scrollToTopBtn.addEventListener('click', function() {
+window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+});
+    </script>
+</body>
+</html>
+
+
+
+
