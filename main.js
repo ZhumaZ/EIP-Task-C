@@ -1,5 +1,5 @@
 
-        $(document).ready(function() {
+    $(document).ready(function() {
     // Smooth scroll to section
     $('a[href^="#"]').on('click', function(event) {
         var target = $($(this).attr('href'));
