@@ -361,6 +361,48 @@ p {
 
 
 
+.caption-area {
+  background: rgba(0, 0, 0, 0) url("image/travel3.jfif") no-repeat scroll 0 0 / 100% 100%;
+  overflow: hidden;
+  padding-bottom: 98px;
+  padding-top: 84px;
+  position: relative;
+}
+
+.caption-area::before {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  content: "";
+  background: #531946;
+  opacity: .95;
+}
+
+.caption-text h1 {
+  color: #ffffff;
+  font-size: 36px;
+  font-style: italic;
+  line-height: 48px;
+  transform: scale(1);
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.caption-text:hover h1 {
+  color: #00aeef;
+  transform: scale(1.1);
+}
+
+
+
+
+
+
         
 
 
